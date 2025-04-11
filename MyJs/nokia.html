@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nokia Phones</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="samsung.html">Samsung</a></li>
+            <li><a href="apple.html">Apple</a></li>
+            <li><a href="oneplus.html">OnePlus</a></li>
+            <li><a href="google.html">Google</a></li>
+            <li><a href="nokia.html">Nokia</a></li>
+        </ul>
+        <!-- Search Bar -->
+        <form action="#search">
+            <input type="text" id="search" placeholder="Search phones..." />
+        </form>
+    </nav>
+
+    <h2>Nokia Phones</h2>
+    <div class="brand">
+        <!-- Nokia X20 -->
+        <div class="phone">
+            <img src="images/nx20.png" alt="Nokia X20">
+            <h3>Nokia X20</h3>
+            <p>Reliable performance and camera.</p>
+            <ul>
+                <li><strong>Camera:</strong> 64 MP + 5 MP (Wide, Ultra-Wide)</li>
+                <li><strong>Battery:</strong> 4470 mAh</li>
+                <li><strong>Storage:</strong> 128 GB</li>
+                <li><strong>Price:</strong> $399</li>
+            </ul>
+        </div>
+    
+        <!-- Nokia 8.3 -->
+        <div class="phone">
+            <img src="images/n8.3.png" alt="Nokia 8.3">
+            <h3>Nokia 8.3</h3>
+            <ul>
+                <li><strong>Camera:</strong> 64 MP</li>
+                <li><strong>Battery:</strong> 4500 mAh</li>
+                <li><strong>Storage:</strong> 128 GB</li>
+                <li><strong>Price:</strong> $699</li>
+            </ul>
+        </div>
+         <!-- Nokia 8.3 5G -->
+         <div class="phone">
+            <img src="images/n8.35g.jpg" alt="Nokia 8.3 5G">
+            <h3>Nokia 8.3 5G</h3>
+            <p>Future-proof with 5G connectivity.</p>
+            <ul>
+                <li><strong>Camera:</strong> 64 MP + 12 MP (Wide, Ultra-Wide)</li>
+                <li><strong>Battery:</strong> 4500 mAh</li>
+                <li><strong>Storage:</strong> 128 GB</li>
+                <li><strong>Price:</strong> $599</li>
+            </ul>
+        </div>
+          <!-- Nokia G50 -->
+          <div class="phone">
+            <img src="images/ng50.jpg" alt="Nokia G50">
+            <h3>Nokia G50</h3>
+            <p>Affordable 5G smartphone.</p>
+            <ul>
+                <li><strong>Camera:</strong> 48 MP</li>
+                <li><strong>Battery:</strong> 5000 mAh</li>
+                <li><strong>Storage:</strong> 128 GB</li>
+                <li><strong>Price:</strong> $199</li>
+            </ul>
+        </div>
+        <!-- Nokia 5.4 -->
+        <div class="phone">
+            <img src="images/n5.4.jpg" alt="Nokia 5.4">
+            <h3>Nokia 5.4</h3>
+            <ul>
+                <li><strong>Camera:</strong> 48 MP</li>
+                <li><strong>Battery:</strong> 4000 mAh</li>
+                <li><strong>Storage:</strong> 64 GB</li>
+                <li><strong>Price:</strong> $250</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Mobile Specs.com</p>
+    </footer>
+    <script>
+        // Brand search
+        const searchInput = document.getElementById('brandSearch');
+        const brandCards = document.querySelectorAll('.brand-card');
+
+        searchInput.addEventListener('input', () => {
+            const filter = searchInput.value.toLowerCase();
+            brandCards.forEach(card => {
+                const brandName = card.querySelector('h3').innerText.toLowerCase();
+                card.style.display = brandName.includes(filter) ? 'block' : 'none';
+            });
+        });
+
+        // Model search for Samsung and Apple
+        brandCards.forEach(card => {
+            const brandName = card.querySelector('h3').innerText;
+            const modelSearchInput = card.querySelector('.model-search');
+            const modelListItems = card.querySelectorAll('.model-list li');
+
+            if (modelSearchInput && modelListItems.length) {
+                modelSearchInput.addEventListener('input', () => {
+                    const filter = modelSearchInput.value.toLowerCase();
+                    modelListItems.forEach(item => {
+                        item.style.display = item.innerText.toLowerCase().includes(filter) ? 'list-item' : 'none';
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
