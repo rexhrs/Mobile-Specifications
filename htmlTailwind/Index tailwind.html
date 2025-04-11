@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Phones</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 shadow-md p-5">
+        <ul class="flex justify-center space-x-6">
+            <li><a href="samsung.html" class="text-white text-lg px-4 py-2 hover:bg-red-400 rounded">Samsung</a></li>
+            <li><a href="apple.html" class="text-white text-lg px-4 py-2 hover:bg-red-400 rounded">Apple</a></li>
+            <li><a href="oneplus.html" class="text-white text-lg px-4 py-2 hover:bg-red-400 rounded">OnePlus</a></li>
+            <li><a href="google.html" class="text-white text-lg px-4 py-2 hover:bg-red-400 rounded">Google</a></li>
+            <li><a href="nokia.html" class="text-white text-lg px-4 py-2 hover:bg-red-400 rounded">Nokia</a></li>
+        </ul>
+        <form action="#search" class="flex justify-center mt-4">
+            <input type="text" id="search" placeholder="Search phones..."
+                class="p-2 w-64 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-400">
+        </form>
+    </nav>
+
+    <h1 class="text-center mt-12 text-4xl font-bold">Welcome to Mobile Phones</h1>
+    <p class="text-center text-xl text-gray-600 my-6">Explore your favorite phone brands and models. Find the latest phones with top-notch features!</p>
+
+    <!-- Brand Buttons Section -->
+    <section id="brands" class="flex flex-wrap justify-evenly gap-6 mt-8 px-4">
+        <div class="brand text-center transition-transform hover:scale-105 w-48">
+            <a href="samsung.html" class="block">
+                <img src="images/Samsung_logo.avif" alt="Samsung Logo" class="w-36 h-36 object-contain mb-2 mx-auto">
+                <button class="w-full bg-gray-800 text-white text-lg py-3 rounded hover:bg-red-400 transition">Samsung</button>
+            </a>
+        </div>
+        <div class="brand text-center transition-transform hover:scale-105 w-48">
+            <a href="apple.html" class="block">
+                <img src="images/apple.jpg" alt="Apple Logo" class="w-36 h-36 object-contain mb-2 mx-auto">
+                <button class="w-full bg-gray-800 text-white text-lg py-3 rounded hover:bg-red-400 transition">Apple</button>
+            </a>
+        </div>
+        <div class="brand text-center transition-transform hover:scale-105 w-48">
+            <a href="oneplus.html" class="block">
+                <img src="images/oneplus.png" alt="OnePlus Logo" class="w-36 h-36 object-contain mb-2 mx-auto">
+                <button class="w-full bg-gray-800 text-white text-lg py-3 rounded hover:bg-red-400 transition">OnePlus</button>
+            </a>
+        </div>
+        <div class="brand text-center transition-transform hover:scale-105 w-48">
+            <a href="google.html" class="block">
+                <img src="images/googlepixel.png" alt="Google Logo" class="w-36 h-36 object-contain mb-2 mx-auto">
+                <button class="w-full bg-gray-800 text-white text-lg py-3 rounded hover:bg-red-400 transition">Google</button>
+            </a>
+        </div>
+        <div class="brand text-center transition-transform hover:scale-105 w-48">
+            <a href="nokia.html" class="block">
+                <img src="images/nokia.png" alt="Nokia Logo" class="w-36 h-36 object-contain mb-2 mx-auto">
+                <button class="w-full bg-gray-800 text-white text-lg py-3 rounded hover:bg-red-400 transition">Nokia</button>
+            </a>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="text-center p-5 bg-gray-800 text-white fixed bottom-0 w-full">
+        <p>&copy; 2025 Mobile Specs.com | All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
