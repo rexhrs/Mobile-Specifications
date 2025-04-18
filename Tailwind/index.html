@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Phones</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-100 text-gray-800">
+
+    <nav class="bg-gray-800 p-5 shadow-md">
+        <div class="flex justify-between items-center">
+            <!-- Home Button (Left) -->
+            <div>
+                <a href="index.html" class="text-white text-lg hover:bg-orange-600 hover:rounded-lg px-5 py-3 transition duration-300">Home</a>
+            </div>
+    
+            <!-- Brand Buttons (Center) -->
+            <ul class="hidden md:flex space-x-6 justify-center">
+                <li><a href="samsung.html" class="text-white text-lg hover:bg-orange-600 hover:rounded-lg px-5 py-3 transition duration-300">Samsung</a></li>
+                <li><a href="apple.html" class="text-white text-lg hover:bg-orange-600 hover:rounded-lg px-5 py-3 transition duration-300">Apple</a></li>
+                <li><a href="oneplus.html" class="text-white text-lg hover:bg-orange-600 hover:rounded-lg px-5 py-3 transition duration-300">OnePlus</a></li>
+                <li><a href="google.html" class="text-white text-lg hover:bg-orange-600 hover:rounded-lg px-5 py-3 transition duration-300">Google</a></li>
+                <li><a href="nokia.html" class="text-white text-lg hover:bg-orange-600 hover:rounded-lg px-5 py-3 transition duration-300">Nokia</a></li>
+            </ul>
+    
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobileMenuBtn" class="text-white text-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu (hidden by default) -->
+        <div id="mobileMenu" class="md:hidden mt-4 hidden">
+            <ul class="space-y-4 text-center">
+                <li><a href="samsung.html" class="block text-white text-lg hover:bg-orange-600 hover:rounded-lg px-5 py-3 transition duration-300">Samsung</a></li>
+                <li><a href="apple.html" class="block text-white text-lg hover:bg-orange-600 hover:rounded-lg px-5 py-3 transition duration-300">Apple</a></li>
+                <li><a href="oneplus.html" class="block text-white text-lg hover:bg-orange-600 hover:rounded-lg px-5 py-3 transition duration-300">OnePlus</a></li>
+                <li><a href="google.html" class="block text-white text-lg hover:bg-orange-600 hover:rounded-lg px-5 py-3 transition duration-300">Google</a></li>
+                <li><a href="nokia.html" class="block text-white text-lg hover:bg-orange-600 hover:rounded-lg px-5 py-3 transition duration-300">Nokia</a></li>
+            </ul>
+        </div>
+    
+        <!-- Search Bar -->
+        <div class="mt-4 flex justify-center">
+            <input type="text" placeholder="Search phones..." class="w-64 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-600 transition duration-300">
+        </div>
+    </nav>
+    
+    <h1 class="text-center text-4xl mt-10 text-gray-900">Welcome to Mobile Phones</h1>
+    <p class="text-center text-xl mt-10 text-gray-600 mb-10">Explore your favorite phone brands and models. Find the latest phones with top-notch features!</p>
+
+    <!-- Brand Buttons Section -->
+    <section class="flex flex-wrap justify-evenly gap-6 mt-10">
+        <div class="flex flex-col items-center transition-transform transform hover:scale-105">
+            <a href="samsung.html">
+                <img src="images/Samsung_logo.avif" alt="Samsung Logo" class="w-36 h-36 object-contain mb-4">
+                <button class="w-full py-4 text-lg bg-gray-800 text-white rounded-lg hover:bg-orange-600 transition duration-300">Samsung</button>
+            </a>
+        </div>
+
+        <div class="flex flex-col items-center transition-transform transform hover:scale-105">
+            <a href="apple.html">
+                <img src="images/apple.jpg" alt="Apple Logo" class="w-36 h-36 object-contain mb-4">
+                <button class="w-full py-4 text-lg bg-gray-800 text-white rounded-lg hover:bg-orange-600 transition duration-300">Apple</button>
+            </a>
+        </div>
+
+        <div class="flex flex-col items-center transition-transform transform hover:scale-105">
+            <a href="oneplus.html">
+                <img src="images/oneplus.png" alt="OnePlus Logo" class="w-36 h-36 object-contain mb-4">
+                <button class="w-full py-4 text-lg bg-gray-800 text-white rounded-lg hover:bg-orange-600 transition duration-300">OnePlus</button>
+            </a>
+        </div>
+
+        <div class="flex flex-col items-center transition-transform transform hover:scale-105">
+            <a href="google.html">
+                <img src="images/googlepixel.png" alt="Google Logo" class="w-36 h-36 object-contain mb-4">
+                <button class="w-full py-4 text-lg bg-gray-800 text-white rounded-lg hover:bg-orange-600 transition duration-300">Google</button>
+            </a>
+        </div>
+
+        <div class="flex flex-col items-center transition-transform transform hover:scale-105">
+            <a href="nokia.html">
+                <img src="images/nokia.png" alt="Nokia Logo" class="w-36 h-36 object-contain mb-4">
+                <button class="w-full py-4 text-lg bg-gray-800 text-white rounded-lg hover:bg-orange-600 transition duration-300">Nokia</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-5 mt-20 fixed bottom-0 w-full">
+        <p>&copy; 2025 Mobile Specs.com | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Toggle mobile menu visibility
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Show search input in console
+        const searchInput = document.querySelector('input[type="text"]');
+        searchInput.addEventListener('input', (event) => {
+            console.log("User is searching:", event.target.value);
+        });
+    </script>
+</body>
+</html>
