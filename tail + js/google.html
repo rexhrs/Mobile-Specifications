@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Google Phones</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-5 shadow-md">
+    <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+      <!-- Home Button -->
+      <div class="mb-4 md:mb-0">
+        <a href="index.html" class="text-white text-lg hover:bg-orange-600 hover:rounded-lg px-4 py-2 transition duration-300 block text-center md:text-left">Home</a>
+      </div>
+
+      <!-- Brand Links -->
+      <ul class="flex flex-wrap justify-center space-x-2 sm:space-x-4 md:space-x-6">
+        <li><a href="samsung.html" class="text-white text-lg hover:bg-orange-600 hover:rounded-lg px-3 py-2 transition duration-300">Samsung</a></li>
+        <li><a href="apple.html" class="text-white text-lg hover:bg-orange-600 hover:rounded-lg px-3 py-2 transition duration-300">Apple</a></li>
+        <li><a href="oneplus.html" class="text-white text-lg hover:bg-orange-600 hover:rounded-lg px-3 py-2 transition duration-300">OnePlus</a></li>
+        <li><a href="google.html" class="text-white text-lg hover:bg-orange-600 hover:rounded-lg px-3 py-2 transition duration-300">Google</a></li>
+        <li><a href="nokia.html" class="text-white text-lg hover:bg-orange-600 hover:rounded-lg px-3 py-2 transition duration-300">Nokia</a></li>
+      </ul>
+
+      <div class="w-24"></div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="mt-4 flex justify-center px-4">
+      <input id="searchInput" type="text" placeholder="Search phones..." class="w-full max-w-xs p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-600 transition duration-300">
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <h1 class="text-center text-3xl sm:text-4xl mt-10 text-gray-900 font-semibold">Explore Google Phones</h1>
+  <p class="text-center text-lg sm:text-xl text-gray-600 mb-10 px-4">Experience the simplicity and innovation of Google Pixel phones!</p>
+
+  <!-- Google Phones Section -->
+  <section id="phoneGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mt-10 px-5 pb-20">
+    
+    <!-- Google Pixel 6 Pro -->
+    <div class="phone-card bg-white p-6 shadow-md rounded-md hover:shadow-xl hover:scale-105 transition duration-300">
+      <img src="images/pixel4a.jpg" alt="Google Pixel 6 Pro" class="w-full h-40 object-cover rounded-md mb-4">
+      <h3 class="phone-title text-center text-2xl text-gray-800 mb-2">Google Pixel 6 Pro</h3>
+      <ul class="text-sm">
+        <li><strong>Camera:</strong> 50 MP</li>
+        <li><strong>Battery:</strong> 5003 mAh</li>
+        <li><strong>Storage:</strong> 128 GB</li>
+        <li><strong>Price:</strong> $899</li>
+      </ul>
+    </div>
+
+    <!-- Google Pixel 5 -->
+    <div class="phone-card bg-white p-6 shadow-md rounded-md hover:shadow-xl hover:scale-105 transition duration-300">
+      <img src="images/pixel5.webp" alt="Google Pixel 5" class="w-full h-40 object-cover rounded-md mb-4">
+      <h3 class="phone-title text-center text-2xl text-gray-800 mb-2">Google Pixel 5</h3>
+      <ul class="text-sm">
+        <li><strong>Camera:</strong> 16 MP</li>
+        <li><strong>Battery:</strong> 4080 mAh</li>
+        <li><strong>Storage:</strong> 128 GB</li>
+        <li><strong>Price:</strong> $699</li>
+      </ul>
+    </div>
+
+    <!-- Google Pixel 4a -->
+    <div class="phone-card bg-white p-6 shadow-md rounded-md hover:shadow-xl hover:scale-105 transition duration-300">
+      <img src="images/pixel8.webp" alt="Google Pixel 4a" class="w-full h-40 object-cover rounded-md mb-4">
+      <h3 class="phone-title text-center text-2xl text-gray-800 mb-2">Google Pixel 4a</h3>
+      <ul class="text-sm">
+        <li><strong>Camera:</strong> 12.2 MP</li>
+        <li><strong>Battery:</strong> 3140 mAh</li>
+        <li><strong>Storage:</strong> 128 GB</li>
+        <li><strong>Price:</strong> $349</li>
+      </ul>
+    </div>
+
+    <!-- Google Pixel 4 XL -->
+    <div class="phone-card bg-white p-6 shadow-md rounded-md hover:shadow-xl hover:scale-105 transition duration-300">
+      <img src="images/pixel6pro.webp" alt="Google Pixel 4 XL" class="w-full h-40 object-cover rounded-md mb-4">
+      <h3 class="phone-title text-center text-2xl text-gray-800 mb-2">Google Pixel 4 XL</h3>
+      <ul class="text-sm">
+        <li><strong>Camera:</strong> 16 MP</li>
+        <li><strong>Battery:</strong> 3700 mAh</li>
+        <li><strong>Storage:</strong> 64 GB</li>
+        <li><strong>Price:</strong> $899</li>
+      </ul>
+    </div>
+
+    <!-- Google Pixel 4 -->
+    <div class="phone-card bg-white p-6 shadow-md rounded-md hover:shadow-xl hover:scale-105 transition duration-300">
+      <img src="images/pixel8pro.jpg" alt="Google Pixel 4" class="w-full h-40 object-cover rounded-md mb-4">
+      <h3 class="phone-title text-center text-2xl text-gray-800 mb-2">Google Pixel 4</h3>
+      <ul class="text-sm">
+        <li><strong>Camera:</strong> 12.2 MP</li>
+        <li><strong>Battery:</strong> 2800 mAh</li>
+        <li><strong>Storage:</strong> 64 GB</li>
+        <li><strong>Price:</strong> $799</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-5 mt-10">
+    <p>&copy; 2025 Mobile Specs.com | All Rights Reserved</p>
+  </footer>
+
+  <!-- Search Script -->
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const phoneCards = document.querySelectorAll('.phone-card');
+
+    searchInput.addEventListener('input', function () {
+      const term = this.value.toLowerCase();
+      phoneCards.forEach(card => {
+        const title = card.querySelector('.phone-title').textContent.toLowerCase();
+        card.style.display = title.includes(term) ? 'block' : 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile Phones</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav id="navbar" class="bg-gray-800 px-5 py-4 shadow-md text-white">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center">
+
+      <!-- Logo + Hamburger -->
+      <div class="w-full md:w-auto flex justify-between items-center">
+        <a href="index.html" class="text-white text-xl font-bold">Mobile Specs</a>
+        <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Nav Links -->
+      <ul id="nav-links"
+        class="hidden w-full md:flex md:w-auto flex-col md:flex-row md:items-center md:space-x-6 mt-4 md:mt-0 text-center bg-gray-800 md:bg-transparent rounded-lg md:rounded-none p-4 md:p-0">
+        <li><a href="samsung.html" class="text-white text-lg hover:bg-orange-600 hover:rounded-lg px-5 py-2 transition block">Samsung</a></li>
+        <li><a href="apple.html" class="text-white text-lg hover:bg-orange-600 hover:rounded-lg px-5 py-2 transition block">Apple</a></li>
+        <li><a href="oneplus.html" class="text-white text-lg hover:bg-orange-600 hover:rounded-lg px-5 py-2 transition block">OnePlus</a></li>
+        <li><a href="google.html" class="text-white text-lg hover:bg-orange-600 hover:rounded-lg px-5 py-2 transition block">Google</a></li>
+        <li><a href="nokia.html" class="text-white text-lg hover:bg-orange-600 hover:rounded-lg px-5 py-2 transition block">Nokia</a></li>
+      </ul>
+    </div>
+
+    <!-- Dark Mode Toggle -->
+    <div class="mt-4 flex justify-center px-4">
+      <button id="dark-mode-toggle" class="py-2 px-5 bg-gray-800 text-white rounded-md hover:bg-orange-600 transition">
+        Toggle Dark Mode
+      </button>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="mt-4 flex justify-center px-4">
+      <input type="text" id="search-bar" placeholder="Search phones..."
+        class="w-full max-w-md p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-600 transition duration-300 bg-gray-100 text-gray-800">
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <h1 class="text-center text-3xl md:text-4xl mt-10 text-gray-900">Welcome to Mobile Phones</h1>
+  <p class="text-center text-lg md:text-xl mt-6 mb-10 text-gray-600">Explore your favorite phone brands and models.</p>
+
+  <!-- Price Filter -->
+  <div class="flex justify-center mb-8 px-4">
+    <select id="price-filter"
+      class="w-full max-w-xs px-5 py-3 border border-gray-300 rounded-md text-sm md:text-base">
+      <option value="all">All</option>
+      <option value="low">Under $300</option>
+      <option value="medium">$300 - $700</option>
+      <option value="high">Above $700</option>
+    </select>
+  </div>
+
+  <!-- Sort Products by Name -->
+  <div class="flex justify-center mb-8 px-4">
+    <button id="sort-by-name" class="py-2 px-5 bg-gray-800 text-white rounded-md hover:bg-orange-600 transition">
+      Sort by Name
+    </button>
+  </div>
+
+  <!-- Product Grid -->
+  <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 px-4 mb-28" id="product-grid">
+
+    <!-- Samsung -->
+    <div class="flex flex-col items-center product" data-price="799" data-name="Samsung">
+      <a href="samsung.html">
+        <img src="images/Samsung_logo.avif" alt="Samsung" class="w-28 h-28 md:w-36 md:h-36 object-contain mb-4">
+        <button class="w-full py-3 text-base bg-gray-800 text-white rounded-lg hover:bg-orange-600 transition">Samsung</button>
+      </a>
+    </div>
+
+    <!-- Apple -->
+    <div class="flex flex-col items-center product" data-price="999" data-name="Apple">
+      <a href="apple.html">
+        <img src="images/apple.jpg" alt="Apple" class="w-28 h-28 md:w-36 md:h-36 object-contain mb-4">
+        <button class="w-full py-3 text-base bg-gray-800 text-white rounded-lg hover:bg-orange-600 transition">Apple</button>
+      </a>
+    </div>
+
+    <!-- OnePlus -->
+    <div class="flex flex-col items-center product" data-price="499" data-name="OnePlus">
+      <a href="oneplus.html">
+        <img src="images/oneplus.png" alt="OnePlus" class="w-28 h-28 md:w-36 md:h-36 object-contain mb-4">
+        <button class="w-full py-3 text-base bg-gray-800 text-white rounded-lg hover:bg-orange-600 transition">OnePlus</button>
+      </a>
+    </div>
+
+    <!-- Google -->
+    <div class="flex flex-col items-center product" data-price="799" data-name="Google">
+      <a href="google.html">
+        <img src="images/googlepixel.png" alt="Google" class="w-28 h-28 md:w-36 md:h-36 object-contain mb-4">
+        <button class="w-full py-3 text-base bg-gray-800 text-white rounded-lg hover:bg-orange-600 transition">Google</button>
+      </a>
+    </div>
+
+    <!-- Nokia -->
+    <div class="flex flex-col items-center product" data-price="299" data-name="Nokia">
+      <a href="nokia.html">
+        <img src="images/nokia.png" alt="Nokia" class="w-28 h-28 md:w-36 md:h-36 object-contain mb-4">
+        <button class="w-full py-3 text-base bg-gray-800 text-white rounded-lg hover:bg-orange-600 transition">Nokia</button>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4 fixed bottom-0 w-full text-sm">
+    <p>&copy; 2025 Mobile Specs.com | All Rights Reserved</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Sticky Navbar
+    window.onscroll = function () {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 100) {
+        navbar.classList.add('fixed', 'top-0', 'left-0', 'w-full', 'z-10', 'shadow-lg');
+      } else {
+        navbar.classList.remove('fixed', 'top-0', 'left-0', 'w-full', 'z-10', 'shadow-lg');
+      }
+    };
+
+    // Hamburger Toggle
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('hidden');
+    });
+
+    // Price Filter
+    document.getElementById('price-filter').addEventListener('change', function () {
+      const value = this.value;
+      const products = document.querySelectorAll('.product');
+      products.forEach(product => {
+        const price = parseFloat(product.getAttribute('data-price'));
+        if (
+          value === 'all' ||
+          (value === 'low' && price <= 300) ||
+          (value === 'medium' && price > 300 && price <= 700) ||
+          (value === 'high' && price > 700)
+        ) {
+          product.style.display = 'block';
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    });
+
+    // Search functionality
+    document.getElementById('search-bar').addEventListener('input', function () {
+      const searchQuery = this.value.toLowerCase();
+      const products = document.querySelectorAll('.product');
+
+      products.forEach(product => {
+        const productName = product.getAttribute('data-name').toLowerCase();
+        const button = product.querySelector('button');
+        if (productName.includes(searchQuery)) {
+          product.style.display = 'block';
+          button.classList.remove('text-white');
+          button.classList.add('text-black');
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    });
+
+    // Dark Mode Toggle
+    document.getElementById('dark-mode-toggle').addEventListener('click', () => {
+      document.body.classList.toggle('bg-gray-900');
+      document.body.classList.toggle('text-white');
+      document.querySelectorAll('.bg-gray-800').forEach(element => {
+        element.classList.toggle('bg-gray-900');
+      });
+
+      // Update button colors for dark mode
+      document.querySelectorAll('button').forEach(button => {
+        button.classList.toggle('bg-gray-600');
+        button.classList.toggle('text-gray-900');
+      });
+
+      // Update other elements for better contrast in dark mode
+      document.querySelectorAll('input, select').forEach(input => {
+        input.classList.toggle('bg-gray-700');
+        input.classList.toggle('text-white');
+        input.classList.toggle('border-gray-600');
+      });
+    });
+
+    // Sort Products by Name
+    document.getElementById('sort-by-name').addEventListener('click', () => {
+      const productsContainer = document.getElementById('product-grid');
+      const products = Array.from(productsContainer.children);
+      products.sort((a, b) => {
+        const nameA = a.getAttribute('data-name').toLowerCase();
+        const nameB = b.getAttribute('data-name').toLowerCase();
+        return nameA.localeCompare(nameB);
+      });
+
+      products.forEach(product => {
+        productsContainer.appendChild(product);
+      });
+    });
+  </script>
+</body>
+
+</html>

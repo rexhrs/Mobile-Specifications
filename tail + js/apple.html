@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apple Phones</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-5 shadow-md">
+    <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+      <!-- Home Button -->
+      <div class="mb-4 md:mb-0">
+        <a href="index.html" class="text-white text-lg hover:bg-orange-600 hover:rounded-lg px-4 py-2 transition duration-300 block text-center md:text-left">Home</a>
+      </div>
+
+      <!-- Brand Buttons -->
+      <ul class="flex flex-wrap justify-center space-x-2 sm:space-x-4 md:space-x-6">
+        <li><a href="samsung.html" class="text-white text-lg hover:bg-orange-600 hover:rounded-lg px-3 py-2 transition duration-300">Samsung</a></li>
+        <li><a href="apple.html" class="text-white text-lg hover:bg-orange-600 hover:rounded-lg px-3 py-2 transition duration-300">Apple</a></li>
+        <li><a href="oneplus.html" class="text-white text-lg hover:bg-orange-600 hover:rounded-lg px-3 py-2 transition duration-300">OnePlus</a></li>
+        <li><a href="google.html" class="text-white text-lg hover:bg-orange-600 hover:rounded-lg px-3 py-2 transition duration-300">Google</a></li>
+        <li><a href="nokia.html" class="text-white text-lg hover:bg-orange-600 hover:rounded-lg px-3 py-2 transition duration-300">Nokia</a></li>
+      </ul>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="mt-4 flex justify-center px-4">
+      <input id="searchInput" type="text" placeholder="Search phones..." class="w-full max-w-xs p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-600 transition duration-300">
+    </div>
+  </nav>
+
+  <!-- Heading -->
+  <h1 class="text-center text-3xl sm:text-4xl mt-10 text-gray-900 font-semibold">Explore Apple Phones</h1>
+  <p class="text-center text-lg sm:text-xl text-gray-600 mb-10 px-4">Discover the latest Apple iPhones with revolutionary features and design!</p>
+
+  <!-- Apple Phone Cards -->
+  <section id="phoneGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mt-10 px-5 pb-20">
+
+    <!-- iPhone 12 -->
+    <div class="phone-card bg-white p-6 shadow-md rounded-md hover:shadow-xl hover:scale-105 transition duration-300">
+      <img src="images/12.jpg" alt="iPhone 12" class="w-full h-40 object-cover rounded-md mb-4">
+      <h3 class="phone-title text-center text-2xl text-gray-800 mb-2">iPhone 12</h3>
+      <ul class="text-sm">
+        <li><strong>Camera:</strong> 12 MP</li>
+        <li><strong>Battery:</strong> 2815 mAh</li>
+        <li><strong>Storage:</strong> 64 GB</li>
+        <li><strong>Price:</strong> $799</li>
+      </ul>
+    </div>
+
+    <!-- iPhone 12 Pro -->
+    <div class="phone-card bg-white p-6 shadow-md rounded-md hover:shadow-xl hover:scale-105 transition duration-300">
+      <img src="images/12 pro.jpg" alt="iPhone 12 Pro" class="w-full h-40 object-cover rounded-md mb-4">
+      <h3 class="phone-title text-center text-2xl text-gray-800 mb-2">iPhone 12 Pro</h3>
+      <ul class="text-sm">
+        <li><strong>Camera:</strong> 12 MP</li>
+        <li><strong>Battery:</strong> 2815 mAh</li>
+        <li><strong>Storage:</strong> 128 GB</li>
+        <li><strong>Price:</strong> $999</li>
+      </ul>
+    </div>
+
+    <!-- iPhone 13 -->
+    <div class="phone-card bg-white p-6 shadow-md rounded-md hover:shadow-xl hover:scale-105 transition duration-300">
+      <img src="images/13.jpg" alt="iPhone 13" class="w-full h-40 object-cover rounded-md mb-4">
+      <h3 class="phone-title text-center text-2xl text-gray-800 mb-2">iPhone 13</h3>
+      <ul class="text-sm">
+        <li><strong>Camera:</strong> 12 MP</li>
+        <li><strong>Battery:</strong> 3240 mAh</li>
+        <li><strong>Storage:</strong> 128 GB</li>
+        <li><strong>Price:</strong> $799</li>
+      </ul>
+    </div>
+
+    <!-- iPhone 13 Pro -->
+    <div class="phone-card bg-white p-6 shadow-md rounded-md hover:shadow-xl hover:scale-105 transition duration-300">
+      <img src="images/13pro.jpg" alt="iPhone 13 Pro" class="w-full h-40 object-cover rounded-md mb-4">
+      <h3 class="phone-title text-center text-2xl text-gray-800 mb-2">iPhone 13 Pro</h3>
+      <ul class="text-sm">
+        <li><strong>Camera:</strong> 12 MP</li>
+        <li><strong>Battery:</strong> 3095 mAh</li>
+        <li><strong>Storage:</strong> 256 GB</li>
+        <li><strong>Price:</strong> $1099</li>
+      </ul>
+    </div>
+
+    <!-- iPhone SE (2020) -->
+    <div class="phone-card bg-white p-6 shadow-md rounded-md hover:shadow-xl hover:scale-105 transition duration-300">
+      <img src="images/se.jpg" alt="iPhone SE" class="w-full h-40 object-cover rounded-md mb-4">
+      <h3 class="phone-title text-center text-2xl text-gray-800 mb-2">iPhone SE (2020)</h3>
+      <ul class="text-sm">
+        <li><strong>Camera:</strong> 12 MP</li>
+        <li><strong>Battery:</strong> 1821 mAh</li>
+        <li><strong>Storage:</strong> 64 GB</li>
+        <li><strong>Price:</strong> $399</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-5 mt-10">
+    <p>&copy; 2025 Mobile Specs.com | All Rights Reserved</p>
+  </footer>
+
+  <!-- JavaScript for Search -->
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const phoneCards = document.querySelectorAll('.phone-card');
+
+    searchInput.addEventListener('input', function () {
+      const searchTerm = this.value.toLowerCase();
+
+      phoneCards.forEach(card => {
+        const title = card.querySelector('.phone-title').textContent.toLowerCase();
+        card.style.display = title.includes(searchTerm) ? 'block' : 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>
